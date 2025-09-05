@@ -7,3 +7,310 @@
     list-style: none;
     font-family: sans-serif;
 }
+body 
+{
+    background-color: black;
+}
+/* header-section */
+header 
+{
+    width: 100%;
+    position: sticky;
+    top: 0px;
+    background-color: #000000;
+    box-shadow: 0px 0px 10px 2px #ccc;
+}
+.header-mid 
+{
+    max-width: 1470px;
+    margin: auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 5px 0px;
+    flex-wrap: wrap;
+}
+.header-mid-left
+{
+    flex-basis: 40%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+}
+.logo-img 
+{
+    flex-basis: 6%;
+    position: relative;
+}
+.logo-img::after
+{
+    content: "Spotify";
+    font-size: 15px;
+    color: #FFFFFF;
+    letter-spacing: 1px;
+    position: absolute;
+    top: 100%;
+    left: 0px;
+    padding:5px;
+    border-radius: 8px;
+    background-color:rgb(48, 48, 48);
+    box-shadow: 0px 0px 10px 2px rgb(48, 48, 48);
+    transition: 0.5s;
+    transform-origin: top;
+    transform: scaleY(0);
+}
+.logo-img:hover.logo-img::after
+{
+    transform: scaleY(1);
+}
+.header-mid-left .logo-img>a>img 
+{
+    width: 100%;
+    display: block;
+}
+.home 
+{
+    flex-basis: 10%;
+    border-radius: 50%;
+    background-color: rgb(48, 48, 48);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 15px;
+    cursor: pointer;
+    transition: 0.5s;
+    position: relative;
+}
+.home::after
+{
+    content: "Home";
+    font-size: 15px;
+    color: #FFFFFF;
+    letter-spacing: 1px;
+    position: absolute;
+    top: 100%;
+    left: 0px;
+    padding:5px;
+    border-radius: 8px;
+    background-color:rgb(48, 48, 48);
+    box-shadow: 0px 0px 10px 2px rgb(48, 48, 48);
+    transition: 0.5s;
+    transform-origin: top;
+    transform: scaleY(0);
+}
+.home:hover.home::after 
+{
+    transform: scale(1);
+}
+.home:hover 
+{
+    outline: 2px solid rgb(88,88,88);
+    background-color:rgb(88, 88, 88);
+}
+.home>i 
+{
+    font-size: 24px;
+    color: white;
+}
+.search 
+{
+    flex-basis:80%;
+    background-color: rgb(48, 48, 48);
+    border-radius: 50px;
+    transition: 0.5s;
+    border: 2px solid rgb(48, 48, 48);
+    position: relative;
+}
+.search::after 
+{
+    content: "Ctrl k";
+    color: #FFFFFF;
+    background-color:rgb(88, 88, 88);
+    border: 1px solid white;
+    position: absolute;
+    padding:5px 10px;
+    border-radius: 8px;
+    top: 50%;
+    left:75%;
+    transform: translate(-50%,-50%);
+    scale: 0;
+    transform-origin:center;
+    transition: 0.5s;
+}
+.search:hover 
+{
+    background-color:rgb(88, 88, 88);
+    border: 2px solid white;
+} 
+.search:hover.search::after
+{
+    scale:1;
+}
+.search>form 
+{
+    width: 100%;
+    display: flex;
+    flex-wrap:wrap;
+    align-items: center;
+    padding: 10px 0px;
+}
+.btn 
+{
+    flex-basis: 10%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: none;
+    background-color: transparent;
+    color: #FFFFFF;
+    font-size: 24px;
+    cursor: pointer;
+}
+.btn::after
+{
+    content: "Search";
+    font-size: 15px;
+    letter-spacing: 1px;
+    position: absolute;
+    top: 100%;
+    left: 0px;
+    padding:5px;
+    border-radius: 8px;
+    background-color:rgb(48, 48, 48);
+    box-shadow: 0px 0px 10px 2px rgb(48, 48, 48);
+    transition: 0.5s;
+    transform-origin: top;
+    transform: scaleY(0);
+}
+.btn:hover.btn::after
+{
+    transform: scaleY(1);
+}
+.search>form>input 
+{
+    flex-basis: 55%;
+    padding-left:10px;
+    background-color: transparent;
+    border: none;
+    padding:5px;
+    font-size:17px;
+    color: #FFFFFF;
+}
+.search>form>input::placeholder
+{
+    color: #FFFFFF;
+    letter-spacing: 1px ;
+    word-spacing:1px;
+    font-size:17px;
+}
+.folder 
+{
+    flex-basis: 10%;
+    border-left: 1px solid #FFFFFF;
+    display: flex;
+    justify-content: center;
+    font-size: 24px;
+    color: #FFFFFF;
+    margin-left:100px;
+    padding-left: 20px;
+    position: relative;
+}
+.folder>i 
+{
+    cursor: pointer;
+}
+.folder::after 
+{
+    content: "Browse";
+    font-size: 15px;
+    letter-spacing: 1px;
+    position: absolute;
+    top: 100%;
+    left: 0px;
+    padding:5px;
+    border-radius: 8px;
+    background-color:rgb(48, 48, 48);
+    box-shadow: 0px 0px 10px 2px rgb(48, 48, 48);
+    transition: 0.5s;
+    transform-origin: top;
+    transform: scaleY(0);
+}
+.folder:hover.folder::after
+{
+    transform: scaleY(1);
+}
+.header-mid-right
+{
+    flex-basis: 42%;
+    display: flex;
+    flex-wrap: wrap;
+}
+.header-mid-right-items
+{
+    flex-basis: 49%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 10px;
+}
+.right-brd 
+{
+    padding:0px 15px;
+    border-right: 1px solid white;
+}
+.left-brd 
+{
+    padding: 0px 15px;
+}
+.right-items>h3>a
+{
+    color:#9c9999;
+    font-size: 16px;
+    letter-spacing: 1px;
+}
+.right-items>h3>a>i 
+{
+    padding-right: 5px;
+}
+.right-items>h3>a:hover 
+{
+    color: white;
+}
+.right-items:hover
+{
+    transform: scale(1.05);
+}
+.login-up 
+{
+    background-color: white;
+    color: black;
+    font-weight: bold;
+    border-radius: 50px;
+    padding:11px;
+}
+.login-up>h3>a
+{
+    color: black;
+    font-weight: bold;
+}
+.login-up>h3>a:hover 
+{
+    color: black;
+}
+/* end */
+
+/* mobile-header */
+.mobile-header
+{
+    display: none;
+}
+/* end */
+
+/* mobile-footer */
+.mobile-footer
+{
+    display: none;
+}
+/* end */
+
