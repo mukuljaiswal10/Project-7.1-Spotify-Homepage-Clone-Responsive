@@ -85,7 +85,8 @@
     display: none;
   }
   /* mobile-header */
-  .mobile-header {
+  .mobile-header 
+  {
     background-color: black;
     display: flex;
     align-items: center;
@@ -94,21 +95,25 @@
     padding: 10px;
     box-shadow: 0px 0px 10px 2px #ccc;
   }
-  .mobile-header-logo {
+  .mobile-header-logo 
+  {
     flex-basis: 30%;
   }
-  .mobile-header-logo > a > img {
+  .mobile-header-logo > a > img 
+  {
     width: 100%;
     display: block;
   }
-  .open-app {
+  .open-app 
+  {
     flex-basis: 40%;
     display: flex;
     gap: 15px;
     align-items: center;
     justify-content: flex-end;
   }
-  .open-app > button {
+  .open-app > button 
+  {
     background-color: white;
     border: none;
     color: black;
@@ -161,10 +166,122 @@
   /* end */
 }
 @media only screen and (min-width: 768px) and (max-width: 991.8px) {
+    .header-mid-left
+    {
+        flex-basis:100%;
+        justify-content: space-evenly;
+    }
+    .logo-img
+    {
+        display: none;
+    }
+    .logo-2 
+    {
+        display: block;
+    }
+    .home 
+    {
+        flex-basis:2%;
+        padding: 10px;
+    }
+    .search 
+    {
+        flex-basis:25%;
+        padding:0px 10px;
+    }
+    .search>form>input::placeholder
+    {
+        font-size: 15px;
+    }
+    .login 
+    {
+        display: block;
+        padding: 10px;
+    }
+    .header-mid-right
+    {
+        display: none;
+    }
 }
-@media only screen and (min-width: 992px) and (max-width: 1199.8px) {
+@media only screen and (min-width: 992px) and (max-width: 1199.8px) 
+{
+    .header-mid 
+    {
+        padding: 20px;
+    }
+    .header-mid-left
+    {
+        flex-basis:100%;
+        justify-content: space-evenly;
+    }
+    .logo-img
+    {
+        display: none;
+    }
+    .logo-2 
+    {
+        display: block;
+    }
+    .home 
+    {
+        flex-basis:5%;
+        padding: 20px;
+    }
+    .search 
+    {
+        flex-basis:30%;
+        padding:0px 10px;
+    }
+    .search>form>input::placeholder
+    {
+        font-size: 15px;
+    }
+    .login 
+    {
+        display: block;
+    }
+    .header-mid-right
+    {
+        display: none;
+    }
 }
-@media only screen and (min-width: 1200px) and (max-width: 1399.8px) {
+@media only screen and (min-width: 1200px) and (max-width: 1399.8px) 
+{
+    .header-mid 
+    {
+        padding: 20px;
+    }
+    .header-mid-left
+    {
+        flex-basis: 45%;
+    }
+    .search 
+    {
+        padding: 0px 5px;
+    }
+    .search>form>input::placeholder
+    {
+        font-size: 14px;
+    }
+    .right-items>h3>a
+    {
+        font-size: 13px;
+    }
+    .login-up
+    {
+        padding:10px 5px;
+        display: flex;
+        align-items: center;
+    }
 }
-@media only screen and (min-width: 1400px) {
+@media only screen and (min-width: 1400px) and (max-width:1469.8PX)
+{
+    .header-mid 
+    {
+        padding: 20px;
+    }
+    .header-mid-right
+    {
+        flex-basis: 45%;
+    }
 }
